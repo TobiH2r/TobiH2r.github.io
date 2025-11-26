@@ -1,12 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Webseite</title>
+    <title>ÖBB 1144 – Startseite</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #E2001A;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #b30014;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 14px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #FFD500;
+            color: black;
+            border-radius: 5px;
+        }
+
+        /* Dropdown */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #b30014;
+            min-width: 160px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Hero / Startseiten-Design */
+        .hero {
+            padding: 50px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero h2 {
+            color: #b30014;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Bilder modern arrangiert */
+        .bilder {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .bilder img {
+            width: 48%;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+            transition: transform 0.3s ease;
+        }
+
+        .bilder img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <h1>Testupload für meine Seite
-    </h1>
+
+<header>ÖBB 1044 / 1144</header>
+
+<nav>
+    <ul>
+        <li class="dropdown">
+            <a href="#">Informationen ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="technische-daten.html">Technische Daten</a></li>
+                <li><a href="https://produktion.oebb.at/dam/jcr:a0845f00-d9d0-4b2f-9a86-c9830fbbbc69/1144.pdf">Datenblatt</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Videos ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="https://www.youtube.com/watch?v=RNnO2Sh-L-s">Info-Film</a></li> 
+                  <li><a href="https://www.youtube.com/watch?v=F_wFVH88uU8">50 Jahre 1144</a></li>
+            </ul>
+        </li>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+  
+     
+    </ul>
+</nav>
+
+
+
+<div class="hero">
+    <h2>Die Legende der Alpen – Die ÖBB 1144</h2>
+
+    <p>
+        Die ÖBB 1144 gehört zu den bekanntesten Lokomotiven Österreichs.  
+        schnell wurde sie zum Rückgrat des österreichischen Reise- und Güterverkehrs – besonders auf anspruchsvollen 
+        Alpenstrecken. Mit ihrer markanten Form, der hohen Leistung und des 
+        unverkennbaren Sounds gilt sie heute als Ikone der österreichischen 
+        Eisenbahngeschichte.
+    </p>
+
+    <p style="margin-top: 20px;">
+        Auf dieser Seite findest du verschiedenste Informationen über diese 
+        einzigartige Lok – den „Alpenstaubsauger“ der ÖBB.
+    </p>
+
+    <div class="bilder">
+        <img src="13-04-13-st-poelten-bahnhof-247.jpg" alt="Bild nix da diese ">
+
+        <img src="ÖBB_1144_009_in_Puntigam.jpg" alt="Kein bild verfügbar ">
+    </div>
+</div>
+<footer>
+    <a href="credits.html">Credits</a>
+</footer>
 </body>
 </html>
