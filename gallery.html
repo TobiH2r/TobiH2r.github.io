@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie – ÖBB 1144</title>
+
+    <style>
+           
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #E2001A; /* ÖBB Rot */
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #b30014;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 14px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #FFD500; /* ÖBB Gelb */
+            color: black;
+            border-radius: 5px;
+        }
+
+        /* Dropdown */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #b30014;
+            min-width: 160px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+        }
+        
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+       
+        .cta-button {
+            margin: 40px auto;
+            display: block;
+            width: 200px;
+            text-align: center;
+            padding: 12px;
+            background-color: #E2001A;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.1);
+            background-color: #b30014;
+        }
+    
+
+        /* --- Galerie Design --- */
+
+        .galerie-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .galerie-title {
+            text-align: center;
+            font-size: 32px;
+            color: #b30014;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .galerie-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 18px;
+        }
+
+        
+        .bild {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+            transition: transform 0.3s ease;
+        }
+
+        .bild:hover {
+            transform: scale(1.06);
+        }
+
+        .bild img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .bild1 { grid-column: span 3;  }
+        .bild2 { grid-column: span 3; }
+        .bild3 { grid-column: span 2;  }
+        .bild4 { grid-column: span 4; grid-row: span 2;  }
+
+        @media (max-width: 900px) {
+            .galerie-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .bild1, .bild2, .bild3, .bild4 {
+                grid-column: span 2 !important;
+                grid-row: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>ÖBB 1044 / 1144</header>
+
+<nav>
+
+    <li class="dropdown">
+            <a href="#">Informationen ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="technische-daten.html">Technische Daten</a></li>
+                <li><a href="https://produktion.oebb.at/dam/jcr:a0845f00-d9d0-4b2f-9a86-c9830fbbbc69/1144.pdf">Datenblatt</a></li>
+            </ul>
+        </li>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+           
+
+                <li><a href="links.html">Links</a></li>
+        </ul>
+
+         <li class="dropdown">
+            <a href="#">Videos ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="https://www.youtube.com/watch?v=F_wFVH88uU8">50 Jahre 1144</a></li>
+                <li><a href="https://www.youtube.com/watch?v=RNnO2Sh-L-s">Info-Film</a></li>
+            </ul>
+        </li>
+</nav>
+
+
+<div class="galerie-container">
+    <div class="galerie-title">Galerie – ÖBB 1144</div>
+
+    <div class="galerie-grid">
+
+        <div class="bild bild1">
+            <img src="13-04-13-st-poelten-bahnhof-247.jpg">
+        </div>
+
+        <div class="bild bild2">
+            <img src="ÖBB_1144_009_in_Puntigam.jpg">
+        </div>
+
+        <div class="bild bild3">
+            <img src="Rh_1144_mit_REX_nach_Ebensee.jpg">
+        </div>
+
+        <div class="bild bild4">
+            <img src="B2.jpg">
+        </div>
+
+    </div>
+</div>
+<footer>
+    <a href="credits.html">Credits</a>
+</footer>
+</body>
+</html>

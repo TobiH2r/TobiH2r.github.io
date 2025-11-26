@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technische Daten</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #E2001A; /* ÖBB Rot */
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #b30014;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 14px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #FFD500; /* ÖBB Gelb */
+            color: black;
+            border-radius: 5px;
+        }
+
+        /* Dropdown */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #b30014;
+            min-width: 160px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+        }
+        
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Hover-Button Animation */
+        .cta-button {
+            margin: 40px auto;
+            display: block;
+            width: 200px;
+            text-align: center;
+            padding: 12px;
+            background-color: #E2001A;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.1);
+            background-color: #b30014;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+        ÖBB 1044 / 1144 - Technische Daten
+</header>
+
+<nav>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+           
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="links.html">Links</a></li>
+        </ul>
+
+         <li class="dropdown">
+            <a href="#">Videos ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="https://www.youtube.com/watch?v=F_wFVH88uU8">50 Jahre 1144</a></li>
+                <li><a href="https://www.youtube.com/watch?v=RNnO2Sh-L-s">Info-Film</a></li>
+            </ul>
+        </li>
+</nav>
+
+
+<main style="max-width:980px;margin:20px auto;padding:0 18px;">
+    <section class="content">
+        <h2>Kurzübersicht</h2>
+        <p>Die ÖBB BR 1144 (früher Reihe 1044) ist eine elektrisch angetriebene Universallokomotive, die
+        vor allem für Personen- und gemischten Verkehr gebaut wurde. Sie ist zuverlässig, kräftig und in
+        Österreich lange Zeit häufig im regionalen und Fernverkehr eingesetzt worden.</p>
+
+        <h3>Wichtige technische Daten</h3>
+        <ul>
+            <li>Hersteller: SGP (Simmering-Graz-Pauker), BBC, Siemens</li>
+            <li>Leistung: ~4.200 kW</li>
+            <li>Spannung: 15 kV / 16,7 Hz (Oberleitung)</li>
+            <li>Höchstgeschwindigkeit: 140–160 km/h (modellspezifisch)</li>
+            <li>Achsanordnung: Bo'Bo'</li>
+            <li>Gewicht: ungefähr 80 Tonnen</li>
+            <li>Anzahl der produzierten Maschinen: 257 Lokomotiven</li>
+            <li>Spurweite 1.435 mm (Normalspur)</li>
+            <li>Länge über Puffer: 16,4m</li>
+            <li>Drehgestellachsstand:2.800 mm</li>
+            <li>Gesamtachsstand: 9.000 mm</li>
+            <li>Nennleistung: 3.000 kW (4.082 PS)</li>
+            <li>Baujahre: 1978-1995  </li>
+            <li>Der unterschied zwischen 1044 und 1144 liegt darin dass die 1144  das Ergebnis eines Umbaus der Reihe 1044 ist ,
+                 bei dem die Loks mit einer Wendezug- und kompatiblen Vielfachsteuerung ausgestattet wurden. Zusätzlich erhielten sie nach dem Umbau eine GSM-R-Anlage,
+                  PZB 90 und LED-Scheinwerfer.  </li>
+            <li>Anfahrtszugkraft: 300 kN</li>
+            <li>die schnellse Lokomotive ihrer art ist 1144 501-3 sie erreichte 241,25 KM/h und ist der umbau von 1044 001 </li>
+            <li>Die 1144 aufgrund des besonderen Klanges durch die Trafo und Fahrmotorlüfter 
+                wird sie auch liebevoll Alpenstaubsaucher genannt.</li>
+            <li>Doch leider sind die tage der 1144 gezählt. Bereits jetzt werden die rund 150 sich noch im betrieb befindlichen maschinen ausgemustert 
+                und durch die Taurus und Vectron ersetzt. </li>
+
+            <li>Sie werden sehr oft im Rangierdienst eingesetzt sowie im Personen und Güterverkehr eingesetzt </li>
+            
+          
+            
+
+        </ul>
+
+        <h3>Kurze Geschichte</h3>
+        <p>Die Baureihen 1044/1144 wurden in mehreren Serien gebaut und im Laufe der Zeit modernisiert. Sie
+        prägten das Bild im österreichischen Schienenverkehr und sind für Robustheit und Vielseitigkeit bekannt.</p>
+
+        <h3>Bilder</h3> 
+
+        <div class="image-row" style="display:flex;gap:14px;margin-top:18px;flex-wrap:wrap;">
+            <figure style="flex:1;min-width:260px;">
+                <img src="Rh_1144_mit_REX_nach_Ebensee.jpg" alt="Nix Bild da Sorry" style="width:100%;border-radius:8px;box-shadow:0 8px 18px rgba(0,0,0,0.12);">
+                
+            </figure>
+
+            <figure style="flex:1;min-width:260px;">
+                <img src="B2.jpg" alt="Nix bild Sorry" style="width:100%;border-radius:8px;box-shadow:0 8px 18px rgba(0,0,0,0.12);">
+              
+            </figure>   
+        </div>
+    </section>
+</main>
+
+<footer>
+    <a href="credits.html">Credits</a>
+</footer>
+</body>
+</html> 

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technische Daten</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #E2001A; /* ÖBB Rot */
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #b30014;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 14px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #FFD500; /* ÖBB Gelb */
+            color: black;
+            border-radius: 5px;
+        }
+
+        /* Dropdown */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #b30014;
+            min-width: 160px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+        }
+        
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Hover-Button Animation */
+        .cta-button {
+            margin: 40px auto;
+            display: block;
+            width: 200px;
+            text-align: center;
+            padding: 12px;
+            background-color: #E2001A;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.1);
+            background-color: #b30014;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+        ÖBB 1044 / 1144 - Technische Daten
+</header>
+
+<nav>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+           
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="links.html">Links</a></li>
+        </ul>
+
+         <li class="dropdown">
+            <a href="#">Videos ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="https://www.youtube.com/watch?v=F_wFVH88uU8">50 Jahre 1144</a></li>
+                <li><a href="https://www.youtube.com/watch?v=RNnO2Sh-L-s">Info-Film</a></li>
+            </ul>
+        </li>
+</nav>
+
+
+    <h2>Credits</h2>
+
+    <ul>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Rh_1144_mit_REX_nach_Ebensee.jpg">Rh 1144 mit REX nach Ebensee.jpg (no changes made )</a></li>
+
+        <li><a href="https://commons.wikimedia.org/wiki/File:%C3%96BB_1144_009_in_Puntigam.jpg">ÖBB 1144 009 in Puntigam.jpg</a></li></a></li>
+
+        <li><a href="https://commons.wikimedia.org/wiki/File:%C3%96BB_1144_117_in_Krems_an_der_Donau_Station_2024-03-16.jpg">ÖBB 1144 117 in Krems an der Donau Station 2024-03-16.jpg (no changes made )</a></li>
+
+        <li><a href="https://commons.wikimedia.org/wiki/File:%C3%96BB_1144_009_in_Puntigam.jpg">ÖBB 1144 009 in Puntigam.jpg (no changes)</a></li>
+
+        <li><a href="https://commons.wikimedia.org/wiki/File:13-04-13-st-poelten-bahnhof-247.jpg">13-04-13-st-poelten-bahnhof-247.jpg (no hcanges made)</a></li>
+    </ul>
+
+
+
+</body>
+</html> 
