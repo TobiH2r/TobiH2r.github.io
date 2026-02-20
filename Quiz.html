@@ -1,139 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fragebogen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ÖBB 1044 / 1144 - Quiz</title>
 
-     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
 
-        /* Header */
-        header {
-            background-color: #E2001A; /* ÖBB Rot */
-            padding: 20px;
-            color: white;
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
-        }
+/* Header */
+header {
+    background-color: #E2001A;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
 
-        /* Navigation */
-        nav {
-            background-color: #b30014;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
+/* Navigation */
+nav {
+    background-color: #b30014;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
 
-        nav ul li {
-            position: relative;
-        }
+nav ul li {
+    position: relative;
+}
 
-        nav a {
-            text-decoration: none;
-            color: white;
-            padding: 8px 14px;
-            display: block;
-            transition: 0.3s;
-        }
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 14px;
+    display: block;
+    transition: 0.3s;
+}
 
-        nav a:hover {
-            background-color: #FFD500; /* ÖBB Gelb */
-            color: black;
-            border-radius: 5px;
-        }
+nav a:hover {
+    background-color: #FFD500;
+    color: black;
+    border-radius: 5px;
+}
 
-        /* Dropdown */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #b30014;
-            min-width: 160px;
-            border-radius: 5px;
-            z-index: 1;
-        }
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b30014;
+    min-width: 160px;
+    border-radius: 5px;
+    z-index: 1;
+}
 
-        .dropdown-content a {
-            padding: 10px;
-        }
-        
+.dropdown-content a {
+    padding: 10px;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-        /* Hover-Button Animation */
-        .cta-button {
-            margin: 40px auto;
-            display: block;
-            width: 200px;
-            text-align: center;
-            padding: 12px;
-            background-color: #E2001A;
-            color: white;
-            font-size: 18px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.2s ease, background 0.3s ease;
-        }
+/* Main Bereich */
+main {
+    max-width: 980px;
+    margin: 20px auto;
+    padding: 0 18px;
+}
 
-        .cta-button:hover {
-            transform: scale(1.1);
-            background-color: #b30014;
-        }
-    </style>
+/* Quiz */
+.question {
+    background: white;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.question h3 {
+    margin-top: 0;
+}
+
+.correct {
+    background: #c8f7c5;
+}
+
+.wrong {
+    background: #f7c5c5;
+}
+
+button {
+    margin: 30px auto;
+    display: block;
+    width: 220px;
+    text-align: center;
+    padding: 12px;
+    background-color: #E2001A;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #b30014;
+}
+
+#result {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+</style>
 </head>
 <body>
-    <header>ÖBB 1044 / 1144 - Quiz THIS PAGE IS IN DEVELOPMENT</header>
+
+<header>
+ÖBB 1044 / 1144 - Quiz
+</header>
 
 <nav>
     <ul>
-
         <li><a href="index.html">Home</a></li>
-
-        <li class="dropdown">
-            <a href="#">Informationen ▾</a>
-            <ul class="dropdown-content">
-                <li><a href="technische-daten.html">Technische Daten</a></li>
-                <li><a href="1144.pdf">Datenblatt</a></li>
-            </ul>
-        </li>
-
-        <li class="dropdown">
-            <a href="#">Videos ▾</a>
-            <ul class="dropdown-content">
-                <li><a href="https://www.youtube.com/watch?v=RNnO2Sh-L-s">Info-Film</a></li> 
-                  <li><a href="https://www.youtube.com/watch?v=F_wFVH88uU8">50 Jahre 1144</a></li>
-            </ul>
-        </li>
-
         <li><a href="gallery.html">Galerie</a></li>
-  
-     
+    </ul>
+
+    <ul class="dropdown">
+        <a href="#">Videos ▾</a>
+        <ul class="dropdown-content">
+            <li><a href="https://www.youtube.com/watch?v=F_wFVH88uU8">50 Jahre 1144</a></li>
+            <li><a href="https://www.youtube.com/watch?v=RNnO2Sh-L-s">Info-Film</a></li>
+        </ul>
     </ul>
 </nav>
 
-    <form id="q1">
-        <h3>Welchen Spitznamen trägt die ÖBB Br 1144 ? </h3>
-        <p><input type="radio" name="q1" value="Roter Brummer" /> Roter Brummer</p>
-        <p><input type="radio" name="q1" value="Alprenstaubsauger" /> Alpenstaubsauger </p>
-        <p><input type="radio" name="q1" value="Knödelpresse" /> Knödelpresse</p>
-        <p><input type="radio" name="q1" value="Eisenschwein" />Eisenschwein</p>
-    </form>
+<main>
 
+<div class="question" data-correct="1">
+<h3>1. Welchen Spitznamen trägt die ÖBB 1144?</h3>
+<p><input type="radio" name="q1" value="0"> Roter Brummer</p>
+<p><input type="radio" name="q1" value="1"> Alpenstaubsauger</p>
+<p><input type="radio" name="q1" value="2"> Knödelpresse</p>
+<p><input type="radio" name="q1" value="3"> Eisenschwein</p>
+</div>
+
+<div id="quiz"></div>
+
+<button onclick="finishExam()">Antworten überprüfen</button>
+<div id="result"></div>
+
+</main>
+
+<script src="quiz.js"></script>
 
 </body>
 </html>
