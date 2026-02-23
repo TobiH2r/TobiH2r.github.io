@@ -35,7 +35,7 @@ correct:[2]
 {
 type:"single",
 q:"6. Welche Spannung wird verwendet?",
-answers:["3 kV Gleichstrom","15 kV 16,7 Hz","25 kV 50 Hz","Diesel-elektrisch"],
+answers:["15 kv 60Hz","15 kV 16,7 Hz","25 kV 50 Hz","50 kV 60 Hz"],
 correct:[1]
 },
 
@@ -63,14 +63,14 @@ correct:[2]
 {
 type:"single",
 q:"10.Wie hoch ist die schnellste gemessene Geschwindigkeit der 1144 501-3?",
-answers:["200 km/h","220 km/h","241,25 km/h","260 km/h"],
+answers:["515,3 km/h","256,38 km/h","241,25 km/h","357 km/h"],
 correct:[2]
 },
 
 {
 type:"single",
 q:"11. Die 1144 ist der Umbau welcher Reihe?",
-answers:["1042","1016","1044","1116"],
+answers:["1042","1016","1044","1016"],
 correct:[2]
 },
 
@@ -86,7 +86,7 @@ correct:[0,1,2]
 {
 type:"multi",
 q:"13. Welche Modernisierungen erhielt die 1144?",
-answers:["Wendezugsteuerung","GSM-R","PZB 90","Dampfkessel"],
+answers:["Wendezugsteuerung","GSM-R","PZB 90","Mittelpufferkupplung"],
 correct:[0,1,2]
 },
 
@@ -121,7 +121,7 @@ correct:[0]
 {
 type:"multi",
 q:"18. In welchen Bereichen wird die 1144 eingesetzt?",
-answers:["Rangierdienst","Personenverkehr","Güterverkehr","Straßenbahnverkehr"],
+answers:["Rangierdienst","Personenverkehr","Güterverkehr","ETCS Level 2 Hochgeschwindigkeitsstrecken"],
 correct:[0,1,2]
 },
 
@@ -154,51 +154,51 @@ correct:[2]
 },
 
 {
-type:"single",
-q:"23. Durch welche Lokfamilien wird der Alpenstaubsauger ersetzt?",
-answers:["ICE","Railjet","Taurus & Vectron","Cityjet"],
-correct:[2]
+type:"multi",
+q:"23. Durch welche Fahrzeugfamilien wird der Alpenstaubsauger ersetzt?",
+answers:["Desiro","Stadler Kiss","Taurus","Vectron","Talent"],
+correct:[2,3]
 },
 
 {
 type:"multi",
 q:"24. Warum wird sie 'Alpenstaubsauger' genannt?",
-answers:["Wegen der Trafolüfter","Wegen der Fahrmotorlüfter","Wegen der Dampfpfeife","Wegen des starken Geräuschs"],
+answers:["Wegen der Trafolüfter","Wegen der Fahrmotorlüfter","Wegen dem Makrofon","Wegen des starken Geräuschs"],
 correct:[0,1,3]
 },
 
 {
 type:"single",
 q:"25. Woher bezieht sie ihre Energie?",
-answers:["Dieseltank","Oberleitung","Batterie","Wasserstoff"],
+answers:["Dieselmotor","Oberleitung","Akku","Wasserstoffzelle"],
 correct:[1]
 },
 
 {
 type:"single",
 q:"26.  Der umbau zur 1144 brachte welche Lichttechnik?",
-answers:["Gaslampen","Halogen","LED","Xenon"],
+answers:["Glühbirnen","Halogen","LED","Xenon"],
 correct:[2]
 },
 
 {
 type:"single",
 q:"27.Welche Art von Lok ist die 1144?",
-answers:["Diesellok","Elektrische Universallokomotive","Hybridlok","Dampflok"],
+answers:["Diesellok","Elektrolok ","Hybridlok","Dampflok"],
 correct:[1]
 },
 
 {
 type:"single",
 q:"28. Wie hieß sie vor dem Umbau?",
-answers:["1142","1044","1016","1216"],
+answers:["1142","1044","1016","1014"],
 correct:[1]
 },
 
 {
 type:"single",
 q:"29.Wie hoch ist die max. Geschwindigkeit je nach Version?",
-answers:["120 km/h","140–160 km/h","200 km/h","220 km/h"],
+answers:["120-140 km/h","140–160 km/h","200-220 km/h","220-240 km/h"],
 correct:[1]
 },
 
