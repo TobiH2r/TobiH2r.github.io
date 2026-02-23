@@ -2,7 +2,7 @@ let examFinished = false;
 
 let questions = [
 
-/* SINGLE CHOICE */
+
 
 {
 type:"single",
@@ -48,33 +48,33 @@ correct:[1]
 
 {
 type:"single",
-q:"8. Spurweite?",
+q:"8.Wie groß ist die Spurweite?",
 answers:["1000 mm","1435 mm","1520 mm","1676 mm"],
 correct:[1]
 },
 
 {
 type:"single",
-q:"9. Anfahrzugkraft?",
+q:"9.  Wie hoch ist die Anfahrzugkraft?",
 answers:["200 kN","250 kN","300 kN","350 kN"],
 correct:[2]
 },
 
 {
 type:"single",
-q:"10. Schnellste gemessene Geschwindigkeit der 1144 501-3?",
+q:"10.Wie hoch ist die schnellste gemessene Geschwindigkeit der 1144 501-3?",
 answers:["200 km/h","220 km/h","241,25 km/h","260 km/h"],
 correct:[2]
 },
 
 {
 type:"single",
-q:"11. Die 1144 ist ein Umbau der Reihe?",
+q:"11. Die 1144 ist der Umbau welcher Reihe?",
 answers:["1042","1016","1044","1116"],
 correct:[2]
 },
 
-/* MULTIPLE CHOICE */
+
 
 {
 type:"multi",
@@ -92,28 +92,28 @@ correct:[0,1,2]
 
 {
 type:"single",
-q:"14. Dienstgewicht ungefähr?",
+q:"14. Wie hoch ist das ungefähre Dienstgewicht?",
 answers:["70 t","80 t","90 t","100 t"],
 correct:[1]
 },
 
 {
 type:"single",
-q:"15. Drehgestellachsstand?",
+q:"15.Wie groß ist der Drehgestellachsstand?",
 answers:["2500 mm","2600 mm","2800 mm","3000 mm"],
 correct:[2]
 },
 
 {
 type:"single",
-q:"16. Gesamtachsstand?",
+q:"16.Wie groß ist der Gesamtachsstand?",
 answers:["8000 mm","8500 mm","9000 mm","9500 mm"],
 correct:[2]
 },
 
 {
 type:"single",
-q:"17. Frequenz des Stromsystems?",
+q:"17. Wie hoch ist die Frequenz des Stromnetzes?",
 answers:["16,7 Hz","25 Hz","50 Hz","60 Hz"],
 correct:[0]
 },
@@ -127,97 +127,97 @@ correct:[0,1,2]
 
 {
 type:"single",
-q:"19. Spitzname aufgrund des Klanges?",
+q:"19. Welchen Spitznamen bekam sie aufgrund ihres besonderen Klanges?",
 answers:["Eisenschwein","Alpenstaubsauger","Donnerlok","Roter Blitz"],
 correct:[1]
 },
 
 {
 type:"single",
-q:"20. Anzahl Achsen?",
+q:"20. Wie viele Achsen hat diese Baureihe?",
 answers:["2","4","6","8"],
 correct:[1]
 },
 
 {
 type:"single",
-q:"21. Nennleistung laut Datenblatt?",
+q:"21. Wie hoch ist die Nennleistung der Lok?",
 answers:["2000 kW","3000 kW","4200 kW","5000 kW"],
 correct:[1]
 },
 
 {
 type:"single",
-q:"22. Länge in Metern?",
+q:"22. Wie lang ist sie?",
 answers:["14,8 m","15,6 m","16,4 m","17,2 m"],
 correct:[2]
 },
 
 {
 type:"single",
-q:"23. Ersatz durch welche Lokfamilien?",
+q:"23. Durch welche Lokfamilien wird der Alpenstaubsauger ersetzt?",
 answers:["ICE","Railjet","Taurus & Vectron","Cityjet"],
 correct:[2]
 },
 
 {
 type:"multi",
-q:"24. Warum wurde sie 'Alpenstaubsauger' genannt?",
-answers:["Wegen der Trafo-Lüfter","Wegen der Fahrmotorlüfter","Wegen der Dampfpfeife","Wegen des starken Geräuschs"],
+q:"24. Warum wird sie 'Alpenstaubsauger' genannt?",
+answers:["Wegen der Trafolüfter","Wegen der Fahrmotorlüfter","Wegen der Dampfpfeife","Wegen des starken Geräuschs"],
 correct:[0,1,3]
 },
 
 {
 type:"single",
-q:"25. Stromabnahme erfolgt über?",
+q:"25. Woher bezieht sie ihre Energie?",
 answers:["Dieseltank","Oberleitung","Batterie","Wasserstoff"],
 correct:[1]
 },
 
 {
 type:"single",
-q:"26. Umbau brachte welche Lichttechnik?",
+q:"26.  Der umbau zur 1144 brachte welche Lichttechnik?",
 answers:["Gaslampen","Halogen","LED","Xenon"],
 correct:[2]
 },
 
 {
 type:"single",
-q:"27. Bauart?",
+q:"27.Welche Art von Lok ist die 1144?",
 answers:["Diesellok","Elektrische Universallokomotive","Hybridlok","Dampflok"],
 correct:[1]
 },
 
 {
 type:"single",
-q:"28. Ursprüngliche Bezeichnung vor Umbau?",
+q:"28. Wie hieß sie vor dem Umbau?",
 answers:["1142","1044","1016","1216"],
 correct:[1]
 },
 
 {
 type:"single",
-q:"29. Max. Geschwindigkeit je nach Version?",
+q:"29.Wie hoch ist die max. Geschwindigkeit je nach Version?",
 answers:["120 km/h","140–160 km/h","200 km/h","220 km/h"],
 correct:[1]
 },
 
 {
 type:"single",
-q:"30. Land des Haupteinsatzes?",
+q:"30. In welchem Land wird sie hauptsächlich eingesetzt?",
 answers:["Deutschland","Schweiz","Österreich","Italien"],
 correct:[2]
 },
 
 {
 type:"single",
-q:"31. Anzahl noch im Betrieb ca.?",
+q:"31. Wie viele 1144er sind noch im Betrieb?",
 answers:["50","100","150","250"],
 correct:[2]
 }
 ];
 
-/* RENDER */
+
 
 const quizDiv=document.getElementById("quiz");
 
@@ -239,7 +239,7 @@ quizDiv.appendChild(div);
 });
 
 
-/* AUSWERTUNG */
+
 
 function finishExam(){
 
@@ -262,7 +262,7 @@ q.classList.add("correct");
 q.classList.add("wrong");
 }
 
-/* Richtige Lösungen anzeigen */
+
 inputs.forEach(i=>{
 if(correct.includes(i.value)){
 i.parentElement.style.fontWeight="bold";
