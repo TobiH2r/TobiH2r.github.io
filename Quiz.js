@@ -6,6 +6,12 @@ let questions = [
 
 {
 type:"single",
+q:"2. Welchen Spitznamen trägt die ÖBB 1144?",
+answers:["Roter Brummer","Alpenstaubsauger","Knödelpresse","Eisenschwein"],
+correct:[1]
+},
+{
+type:"single",
 q:"2. In welchen Baujahren wurde die Reihe 1044 gebaut?",
 answers:["1965–1980","1978–1995","1990–2005","2000–2015"],
 correct:[1]
@@ -127,9 +133,9 @@ correct:[0,1,2]
 
 {
 type:"single",
-q:"19. Welchen Spitznamen bekam sie aufgrund ihres besonderen Klanges?",
-answers:["Eisenschwein","Alpenstaubsauger","Donnerlok","Roter Blitz"],
-correct:[1]
+q:"19. Welche Spitznamen bekam sie aufgrund ihres besonderen Klanges?",
+answers:["Donnerlok","Alpenstaubsauger","Sumsi","Roter Brummer"],
+correct:[1,2]
 },
 
 {
