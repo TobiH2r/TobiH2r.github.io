@@ -6,7 +6,7 @@ let questions = [
 
 {
 type:"single",
-q:"2. Welchen Spitznamen trägt die ÖBB 1144?",
+q:"1. Welchen Spitznamen trägt die ÖBB 1144?",
 answers:["Roter Brummer","Alpenstaubsauger","Knödelpresse","Eisenschwein"],
 correct:[1]
 },
