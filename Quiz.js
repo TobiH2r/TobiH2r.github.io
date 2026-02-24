@@ -132,7 +132,7 @@ correct:[0,1,2]
 },
 
 {
-type:"single",
+type:"multi",
 q:"19. Welche Spitznamen bekam sie aufgrund ihres besonderen Klanges?",
 answers:["Donnerlok","Alpenstaubsauger","Sumsi","Roter Brummer"],
 correct:[1,2]
