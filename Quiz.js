@@ -80,8 +80,6 @@ answers:["1042","1016","1044","1016"],
 correct:[2]
 },
 
-
-
 {
 type:"multi",
 q:"12. Welche Hersteller waren beteiligt?",
@@ -244,9 +242,6 @@ div.innerHTML=html;
 quizDiv.appendChild(div);
 });
 
-
-
-
 function finishExam(){
 
 if(examFinished) return;
@@ -267,7 +262,6 @@ q.classList.add("correct");
 }else{
 q.classList.add("wrong");
 }
-
 
 inputs.forEach(i=>{
 if(correct.includes(i.value)){
